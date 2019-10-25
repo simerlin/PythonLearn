@@ -108,6 +108,23 @@ for i in range(1,10):
 
     print()
 
+### python 递归
+
+line = [1,2,3,4,5,7]
+
+print(line[1:]);
+
+def whichOne(list_data):
+    if list_data[1:] :
+        print('continue while')
+        return 1 + whichOne(list_data[1:])
+    else:
+        print('exit while?')
+        return 1
+
+res = whichOne(line)
+
+print(res)
 
 ### Dict 字典 和 set 
 
