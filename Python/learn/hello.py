@@ -126,6 +126,29 @@ res = whichOne(line)
 
 print(res)
 
+
+### 递归实现 斐波那契数列
+
+def fbnq(n):
+    if n<=1:
+    #    print(n," ") 
+       return n
+    else:
+       cval = fbnq(n-1) + fbnq(n-2)
+    #    print(cval," ")
+       return cval 
+
+# fbval = fbnq(13)
+
+def fib(n):
+    a, b = 1, 1
+    for i in range(n):
+        print(a, end=' ')
+        a, b = b, a+b
+
+fib(10)
+# print(fbval)
+
 ### Dict 字典 和 set 
 
        
